@@ -1,0 +1,17 @@
+# CNB 云原生构建配置 - 静态网站部署
+$:
+  # 主流水线：部署静态网站
+  main:
+    push:
+      - branches:
+          - main
+    stages:
+      - name: deploy
+        type: China
+        script:
+          - echo "部署静态网站..."
+        exports:
+          # 将 dist 目录发布为静态网站
+          pages:
+            - path: dist
+
