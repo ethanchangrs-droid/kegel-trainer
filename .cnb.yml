@@ -13,7 +13,7 @@ main:
         - name: deploy
           script:
             - echo "部署静态网站..."
-          exports:
-            pages:
-              - path: dist
+      exports:
+        pages:
+          - path: dist
 
