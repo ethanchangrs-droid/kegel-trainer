@@ -2,10 +2,18 @@
 main:
   push:
     - docker:
-        image: alpine:latest
+        image: node:20
       stages:
+        - name: install
+          script:
+            - npm install
+        - name: build
+          script:
+            - npm run build
         - name: deploy
           script:
             - echo "部署静态网站..."
-            - ls -la dist/
+          exports:
+            pages:
+              - path: dist
 
