@@ -73,3 +73,6 @@ export const TrainingPage: React.FC<TrainingPageProps> = ({ onComplete, onExit }
   );
 };
 
+
+
+

@@ -128,6 +128,20 @@ export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
             恢复默认设置
           </button>
         </motion.div>
+
+        {/* 温馨提示 */}
+        <motion.div
+          className="mt-8 pt-4 border-t border-gray-100"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+        >
+          <p className="text-center text-xs text-gray-400 leading-relaxed">
+            💡 温馨提示：本产品非商用，若发现商用情况，
+            <br />
+            欢迎+v反馈 <span className="font-medium text-gray-500">wowrussell01</span>
+          </p>
+        </motion.div>
       </div>
     </motion.div>
   );
