@@ -1,0 +1,85 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24rpx;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+// 变体样式
+.btn-primary {
+  background-color: #26A69A;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 4rpx solid #26A69A;
+  color: #26A69A;
+}
+
+.btn-text {
+  background-color: transparent;
+  color: #9E9E9E;
+}
+
+// 尺寸样式
+.btn-sm {
+  padding: 16rpx 32rpx;
+  font-size: 28rpx;
+}
+
+.btn-md {
+  padding: 24rpx 48rpx;
+  font-size: 32rpx;
+}
+
+.btn-lg {
+  padding: 32rpx 64rpx;
+  font-size: 36rpx;
+}
+
+// 全宽
+.btn-full {
+  width: 100%;
+}
+
+// 禁用状态
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-disabled.btn-primary {
+  background-color: #BDBDBD;
+}
+
+.btn-disabled.btn-secondary {
+  border-color: #BDBDBD;
+  color: #BDBDBD;
+}
+
+.btn-disabled.btn-text {
+  color: #BDBDBD;
+}
+
+// 点击反馈
+.btn-hover {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+
+.btn-primary.btn-hover {
+  background-color: #00897B;
+}
+
+.btn-secondary.btn-hover {
+  background-color: rgba(38, 166, 154, 0.05);
+}
+
+.btn-text.btn-hover {
+  color: #424242;
+}
+

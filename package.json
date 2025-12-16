@@ -1,29 +1,53 @@
 {
-  "name": "kegel-trainer",
+  "name": "tigan-taro",
   "version": "1.0.0",
-  "description": "提刚运动计数引导工具",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  "private": true,
+  "description": "提刚助手 - Taro 跨端版本（H5 + 微信小程序）",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass"
   },
+  "scripts": {
+    "dev": "npm run dev:h5",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "build": "npm run build:h5",
+    "build:weapp": "taro build --type weapp",
+    "build:h5": "taro build --type h5",
+    "preview": "cd dist && npx serve -s ."
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
   "dependencies": {
+    "@tarojs/components": "4.0.8",
+    "@tarojs/helper": "4.0.8",
+    "@tarojs/plugin-platform-h5": "4.0.8",
+    "@tarojs/plugin-platform-weapp": "4.0.8",
+    "@tarojs/react": "4.0.8",
+    "@tarojs/runtime": "4.0.8",
+    "@tarojs/shared": "4.0.8",
+    "@tarojs/taro": "4.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "framer-motion": "^10.16.16",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@babel/core": "^7.8.0",
+    "@babel/runtime": "^7.21.5",
+    "@tarojs/cli": "4.0.8",
+    "@tarojs/plugin-framework-react": "4.0.8",
+    "@tarojs/webpack5-runner": "4.0.8",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
+    "sass": "^1.69.5",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.10"
+    "weapp-tailwindcss": "^3.5.0"
   }
 }
-

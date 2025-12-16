@@ -1,0 +1,79 @@
+.complete-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+  background: linear-gradient(to bottom, rgba(76, 175, 80, 0.05), #fff);
+}
+
+.complete-icon {
+  font-size: 140rpx;
+  margin-bottom: 32rpx;
+}
+
+.complete-title {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #424242;
+  margin-bottom: 48rpx;
+}
+
+.complete-card {
+  background-color: #fff;
+  border-radius: 24rpx;
+  padding: 48rpx;
+  width: 100%;
+  max-width: 500rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 48rpx;
+}
+
+.complete-card-title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #424242;
+  padding-bottom: 24rpx;
+  margin-bottom: 24rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+
+.complete-stats {
+  // 统计项容器
+}
+
+.complete-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rpx 0;
+}
+
+.complete-stat-label {
+  font-size: 28rpx;
+  color: #9E9E9E;
+}
+
+.complete-stat-value {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #26A69A;
+}
+
+.complete-encourage {
+  font-size: 30rpx;
+  color: #757575;
+  margin-bottom: 64rpx;
+}
+
+.complete-buttons {
+  width: 100%;
+  max-width: 500rpx;
+}
+
+.complete-button-space {
+  height: 24rpx;
+}
+

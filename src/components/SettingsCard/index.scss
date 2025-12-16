@@ -1,0 +1,29 @@
+.settings-card {
+  background-color: #fff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
+}
+
+.settings-card-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #424242;
+  padding-bottom: 16rpx;
+  margin-bottom: 16rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+  display: block;
+}
+
+.settings-card-desc {
+  font-size: 26rpx;
+  color: #9E9E9E;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.settings-card-content {
+  // 分隔线样式通过子元素的边框实现
+}
+

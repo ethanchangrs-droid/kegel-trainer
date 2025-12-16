@@ -1,0 +1,117 @@
+.exercise-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+  background: linear-gradient(to bottom, #FAFAFA, #fff);
+  user-select: none;
+}
+
+.exercise-info {
+  text-align: center;
+  margin-bottom: 48rpx;
+}
+
+.exercise-mode {
+  font-size: 36rpx;
+  color: #757575;
+}
+
+.exercise-progress-text {
+  font-size: 28rpx;
+  color: #9E9E9E;
+  margin-left: 16rpx;
+}
+
+.exercise-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exercise-ring-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exercise-phase-text {
+  font-size: 80rpx;
+  font-weight: bold;
+}
+
+.exercise-seconds {
+  font-size: 60rpx;
+  color: #757575;
+  margin-top: 16rpx;
+  font-variant-numeric: tabular-nums;
+}
+
+.exercise-paused-icon {
+  font-size: 80rpx;
+  margin-bottom: 16rpx;
+}
+
+.exercise-paused-text {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #9E9E9E;
+}
+
+.exercise-reps {
+  margin-top: 48rpx;
+}
+
+.exercise-reps-text {
+  font-size: 40rpx;
+  color: #757575;
+}
+
+.exercise-reps-current {
+  font-weight: 600;
+  color: #26A69A;
+}
+
+.exercise-rest-hint {
+  margin-top: 48rpx;
+  font-size: 32rpx;
+  color: #9E9E9E;
+}
+
+.exercise-total-progress {
+  width: 100%;
+  max-width: 500rpx;
+  margin-top: 64rpx;
+}
+
+.exercise-progress-bar {
+  height: 16rpx;
+  background-color: #E0E0E0;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.exercise-progress-fill {
+  height: 100%;
+  background-color: #26A69A;
+  border-radius: 8rpx;
+  transition: width 0.3s ease;
+}
+
+.exercise-progress-label {
+  display: block;
+  text-align: center;
+  color: #9E9E9E;
+  font-size: 26rpx;
+  margin-top: 16rpx;
+}
+
+.exercise-controls {
+  display: flex;
+  gap: 32rpx;
+  margin-top: 80rpx;
+}
+

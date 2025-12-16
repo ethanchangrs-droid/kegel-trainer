@@ -1,5 +1,6 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage, StateStorage } from 'zustand/middleware';
+import Taro from '@tarojs/taro';
 import type {
   TrainingSettings,
   TrainingState,
@@ -9,6 +10,34 @@ import type {
 } from '../types';
 import { DEFAULT_SETTINGS, INITIAL_TRAINING_STATE } from '../types';
 import { generateTrainingPlan, calculateTotalReps } from '../utils/calculations';
+
+/**
+ * Taro 存储适配器
+ * 适配微信小程序和 H5 的存储差异
+ */
+const taroStorage: StateStorage = {
+  getItem: (name: string): string | null => {
+    try {
+      return Taro.getStorageSync(name) || null;
+    } catch {
+      return null;
+    }
+  },
+  setItem: (name: string, value: string): void => {
+    try {
+      Taro.setStorageSync(name, value);
+    } catch (e) {
+      console.error('Storage setItem error:', e);
+    }
+  },
+  removeItem: (name: string): void => {
+    try {
+      Taro.removeStorageSync(name);
+    } catch (e) {
+      console.error('Storage removeItem error:', e);
+    }
+  },
+};
 
 interface TrainingStore {
   // 设置
@@ -247,6 +276,7 @@ export const useTrainingStore = create<TrainingStore>()(
     }),
     {
       name: 'kegel-trainer-settings',
+      storage: createJSONStorage(() => taroStorage),
       partialize: (state) => ({ settings: state.settings }),
     }
   )

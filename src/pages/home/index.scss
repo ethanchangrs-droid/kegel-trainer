@@ -1,0 +1,83 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(38, 166, 154, 0.05), #fff);
+  padding: 32rpx;
+  padding-bottom: 64rpx;
+}
+
+.home-container {
+  max-width: 750rpx;
+  margin: 0 auto;
+}
+
+.home-header {
+  text-align: center;
+  padding: 48rpx 0 64rpx;
+}
+
+.home-title {
+  display: block;
+  font-size: 64rpx;
+  font-weight: bold;
+  color: #424242;
+}
+
+.home-subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #9E9E9E;
+  margin-top: 16rpx;
+}
+
+.home-settings {
+  // 设置卡片容器
+}
+
+.home-duration {
+  text-align: center;
+  padding: 48rpx 0;
+}
+
+.home-duration-text {
+  font-size: 28rpx;
+  color: #9E9E9E;
+}
+
+.home-duration-value {
+  font-weight: 500;
+  color: #26A69A;
+}
+
+.home-start {
+  // 开始按钮容器
+}
+
+.home-reset {
+  text-align: center;
+  margin-top: 32rpx;
+}
+
+.home-reset-text {
+  font-size: 26rpx;
+  color: #9E9E9E;
+}
+
+.home-tip {
+  margin-top: 64rpx;
+  padding-top: 32rpx;
+  border-top: 2rpx solid #F5F5F5;
+  text-align: center;
+}
+
+.home-tip-text {
+  display: block;
+  font-size: 24rpx;
+  color: #9E9E9E;
+  line-height: 1.6;
+}
+
+.home-tip-wechat {
+  font-weight: 500;
+  color: #757575;
+}
+

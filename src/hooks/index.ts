@@ -1,5 +1,2 @@
-export { useTimer, usePreciseTimer } from './useTimer';
-
-
-
+export { useTimer } from './useTimer';
 

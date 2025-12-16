@@ -1,0 +1,35 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 0;
+}
+
+.slider-label {
+  font-size: 28rpx;
+  color: #424242;
+  flex-shrink: 0;
+}
+
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  flex: 1;
+  max-width: 400rpx;
+}
+
+.slider-input {
+  flex: 1;
+  margin: 0;
+}
+
+.slider-value {
+  width: 100rpx;
+  text-align: right;
+  font-weight: 500;
+  color: #26A69A;
+  font-size: 28rpx;
+  font-variant-numeric: tabular-nums;
+}
+

@@ -1,0 +1,34 @@
+.countdown-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.1), #fff);
+}
+
+.countdown-hint {
+  font-size: 40rpx;
+  color: #757575;
+  margin-bottom: 64rpx;
+}
+
+.countdown-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-number {
+  font-size: 120rpx;
+  font-weight: bold;
+  color: #FFC107;
+}
+
+.countdown-tip {
+  color: #9E9E9E;
+  margin-top: 64rpx;
+  font-size: 28rpx;
+}
+
